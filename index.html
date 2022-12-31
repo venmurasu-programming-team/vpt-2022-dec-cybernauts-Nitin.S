@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="images/icons8-book-16.png" href="https://icons8.com/icons/set/favicon-book" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/books.png" type="image/x-icon" />
     <title>Get your books by cybernauts</title>
     <script src="main.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <main>
-        <div class="container">
-            <section class="search">
-                <h1 class="head"> Want to read your favorite books?Wait no more!</h1>
-                <img class="image" src="images/lib.jpg" alt="">
-                <div class="searchbar">
-                <input id="inp" type="text">
-                <button class="btn" onclick="fetchbooks()">search</button>
-                </div>
-            </section>
-            <section id="result">
-                <h3 >results:</h3>
-            </section>
-        </div>
+      <div class="container">
+        <section class="search">
+          <img class="image" src="images/paperimage.jpg" alt="" />
+          <div class="top-content">
+            <h1 class="search_head">
+              Want to read your favorite books?No need to wait anymore!
+            </h1>
+            <div class="searchbar">
+              <input id="inp" type="text" />
+              <img
+                src="images/search.png"
+                alt=""
+                class="btn"
+                onclick="fetchbooks()"
+              />
+            </div>
+          </div>
+        </section>
+        <section id="result">
+          <h3 class="result_head">results:</h3>
+          <div class="container_result">
+            <div id="a_book">
+                <img src="" alt="" class="cover">
+                <title></title>
+                <author></author>
+                <button id="viewmore"></button>
+            </div>
+          </div>
+          
+        </section>
+      </div>
     </main>
-    
-    <div id="out"></div>
-</body>
+
+   
+  </body>
 </html>
