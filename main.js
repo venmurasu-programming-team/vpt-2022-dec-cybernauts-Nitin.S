@@ -1,6 +1,11 @@
 let input = document.getElementById("inp");
 let output = document.getElementById("out");
 let container_result = document.getElementById("container_result");
+input.addEventListener("keypress",e =>{
+  if(e.key==='Enter')
+{
+  fetchbooks();
+} })
 function fetchbooks() {
     remove_previous_result();
   console.log("clicked");
